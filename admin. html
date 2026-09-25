@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pristage Online Shop - Quality products with delivery available across Kenya.">
+  <meta name="robots" content="index, follow">
+  <title>Pristage Online Shop | Shop Quality Products in Kenya</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">P</span>
+        <span>
+          <strong>Pristage</strong>
+          <small>Online Shop</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-whatsapp" href="https://wa.me/254769218680" target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span></span>
+            Delivery available across Kenya
+          </div>
+
+          <h1>Shop quality products with confidence.</h1>
+
+          <p>
+            Discover carefully selected home appliances, electronics and everyday products
+            at Pristage Online Shop.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">Shop Products</a>
+            <a href="https://wa.me/254769218680" target="_blank" rel="noopener" class="btn btn-outline">
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <div class="trust-row">
+            <div>
+              <strong>✓</strong>
+              <span>Quality Products</span>
+            </div>
+            <div>
+              <strong>✓</strong>
+              <span>Kenya Delivery</span>
+            </div>
+            <div>
+              <strong>✓</strong>
+              <span>WhatsApp Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <span>PRISTAGE</span>
+            <span>KENYA</span>
+          </div>
+
+          <div class="hero-card-icon">🛍️</div>
+
+          <h2>Simple shopping.</h2>
+          <p>Choose your product and contact us directly to place your order.</p>
+
+          <div class="hero-card-line"></div>
+
+          <div class="hero-card-bottom">
+            <span>Fast communication</span>
+            <span>✓</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="features-section">
+      <div class="container features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <div>
+            <h3>Delivery Available</h3>
+            <p>We arrange delivery based on your location.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <div>
+            <h3>Easy Ordering</h3>
+            <p>Order directly through WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <div>
+            <h3>Simple Payment</h3>
+            <p>Payment details are confirmed before you pay.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="products-section" id="products">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-label">OUR PRODUCTS</span>
+            <h2>Shop our collection</h2>
+            <p>Browse available products and contact us to order.</p>
+          </div>
+        </div>
+
+        <div class="shop-controls">
+
+          <div class="search-box">
+            <span>⌕</span>
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Search products..."
+              autocomplete="off"
+            >
+          </div>
+
+          <div class="category-filter" id="categoryFilter">
+            <button class="category-btn active" data-category="all">All</button>
+          </div>
+
+        </div>
+
+        <div id="productsGrid" class="products-grid">
+          <div class="loading-state">
+            <div class="loader"></div>
+            <p>Loading products...</p>
+          </div>
+        </div>
+
+        <div id="noProducts" class="empty-state hidden">
+          <div>🛍️</div>
+          <h3>No products found</h3>
+          <p>Try another search or category.</p>
+        </div>
+
+        <div id="databaseError" class="error-state hidden">
+          <div>⚠️</div>
+          <h3>Products could not be loaded</h3>
+          <p>Please try again later or contact us on WhatsApp.</p>
+          <button id="retryProducts" class="btn btn-primary">Try Again</button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="how-section" id="how-it-works">
+      <div class="container">
+
+        <div class="section-heading centered">
+          <span class="section-label">HOW IT WORKS</span>
+          <h2>Ordering is simple</h2>
+          <p>No complicated checkout process.</p>
+        </div>
+
+        <div class="steps-grid">
+
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon">🛒</div>
+            <h3>Choose a product</h3>
+            <p>Browse our products and select what you would like to buy.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-icon">💬</div>
+            <h3>Contact us</h3>
+            <p>Send us your name, phone number and delivery location on WhatsApp.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon">📍</div>
+            <h3>Confirm delivery</h3>
+            <p>We confirm the delivery cost for your location before payment.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">04</div>
+            <div class="step-icon">📦</div>
+            <h3>Receive your order</h3>
+            <p>After payment confirmation, your order is processed for delivery.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="payment-section">
+      <div class="container payment-box">
+
+        <div>
+          <span class="section-label">PAYMENT</span>
+          <h2>Pay after delivery cost is confirmed</h2>
+          <p>
+            We first confirm the delivery cost for your location.
+            Then you can make payment using our M-Pesa Till.
+          </p>
+        </div>
+
+        <div class="payment-details">
+          <span>M-Pesa Till Number</span>
+          <strong>4991074</strong>
+          <small>PRESTIGE PALACE DECOR</small>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-box">
+
+        <div>
+          <span class="section-label">NEED HELP?</span>
+          <h2>Talk to us directly</h2>
+          <p>
+            Have a question about a product, delivery or ordering?
+            Contact Pristage Online Shop on WhatsApp.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="https://wa.me/254769218680" target="_blank" rel="noopener" class="btn btn-primary">
+            WhatsApp Us
+          </a>
+          <a href="tel:+254769218680" class="btn btn-outline">
+            Call 0769 218 680
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <div class="footer-logo">
+          <span class="logo-mark">P</span>
+          <strong>Pristage Online Shop</strong>
+        </div>
+        <p>
+          Quality products and convenient shopping for customers across Kenya.
+        </p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <a href="#products">Products</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="https://wa.me/254769218680" target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+        <a href="tel:+254769218680">
+          0769 218 680
+        </a>
+        <span>Delivery across Kenya</span>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© <span id="currentYear"></span> Pristage Online Shop. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
